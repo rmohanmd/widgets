@@ -4,7 +4,21 @@ import axios from "axios";
 const Search = () => {
   const [term, setTerm] = useState("");
 
-  useEffect(() => {});
+  useEffect(() => {
+    const search = async () => {
+      await axios.get("https://en.wikipedia.org/w/api.php", {
+        params: {
+          action: "query",
+          list: "search",
+          origin: "*",
+          formart: "json",
+          srsearch: term,
+        },
+      });
+    };
+
+    search();
+  }, [term]);
 
   return (
     <div>
