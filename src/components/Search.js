@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Search = () => {
   const [term, setTerm] = useState("");
-  console.log(term);
+
+  useEffect(() => {});
+
   return (
     <div>
       <div className="ui form">
