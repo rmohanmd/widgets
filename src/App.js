@@ -46,6 +46,7 @@ export default () => {
         options={options}
         selected={selected}
         onSelectedChange={setSelected}
+        label='Select a Color'
       /> */}
 
       <Translate />
