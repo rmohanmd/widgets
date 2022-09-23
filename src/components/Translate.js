@@ -17,7 +17,7 @@ const options = [
   },
   {
     label: "Spanish",
-    value: "en",
+    value: "es",
   },
 ];
 
