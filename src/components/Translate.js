@@ -22,7 +22,7 @@ const options = [
 ];
 
 const Translate = () => {
-  const [language, setLanguage] = useState(options[0]);
+  const [language, setLanguage] = useState(options[3]);
   const [text, setText] = useState("");
   return (
     <div>
